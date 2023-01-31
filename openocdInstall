@@ -1,0 +1,23 @@
+#instal basic tool
+sudo apt install -y git make libtool pkg-config autoconf automake texinfo
+sudo apt install -y perl python3 python3-ply
+
+#install library required
+sudo apt install -y libusb-1.0-0 libusb-1.0-0-dev
+sudo apt install -y libftdi1 libftdi1-dev
+sudo apt install -y libhidapi-hidraw0 libhidapi-libusb0 libhidapi-dev
+sudo apt install -y libgpiod2 libgpiod-dev
+sudo apt install -y libjaylink0 libjaylink-dev
+sudo apt install -y libcapstone4 libcapstone-dev
+
+#get openocd sourcecode
+git clone https://github.com/openocd-org/openocd
+
+#checking dependency
+cd openocd
+./bootstrap
+./configure
+
+echo 'you should see the configuration summary say yes to all items'
+echo 'if any no appear, please check if any library is missing in the result list of "pkg-config --list-all"'
+echo 'if all item say yes, you can use command "cd openocd", "sudo make" and "sudo make install"'
