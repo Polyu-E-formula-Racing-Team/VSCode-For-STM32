@@ -62,6 +62,9 @@ If you don't need a debugger, than you can skip this part.
 Windows 
 1. Add the installation path to system path, i.e. `<Path to your installation>/OpenOCD/bin`
 
+Linux
+1. Run script `openocdInstall` for install instruction.
+
 ### STM32 Cube MX
 STM32 Cube eco system tool for setting hardware parameter and build the project template.
 
