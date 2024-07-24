@@ -105,7 +105,7 @@ ProjectRoot
 |-<ProjectName>.ioc
 ```
 
-#### c_cppproperties.json
+#### c_cppproperties.json (filename maybe wrong)
 The `c_cppproperties.json` file define the IDE highlight and hints setting, it is not a compousery setting, but better set it properly to have a good experience.
 
 There are many item missed here, most of them can find from the `Makefile` generated from STM32CubeMX.
@@ -168,7 +168,7 @@ There are many item missed here, most of them can find from the `Makefile` gener
 }
 ```
 
-#### task.json
+#### task.json (filename maybe wrong)
 The `task.json` file define the task that vscode automated for you.
 ```json
 {
